@@ -30,4 +30,12 @@
     number</p>
 }
 
+@if(control().hasError('noMatch')) {
+<p class="text-red-400">Password do not match.</p>
+}
+
+@if(control().hasError('emailTaken')) {
+<p class="text-red-400">Email taken, please try another email.</p>
+}
+
 }
